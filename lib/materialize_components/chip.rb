@@ -60,7 +60,7 @@ module MaterializeComponents
       # @return [self] Returns a reference to self
 
       def icon_class(c= "")
-        @icon_badge.icon.add_class(c)
+        @icon_badge.add_class(c)
         self
       end
 
