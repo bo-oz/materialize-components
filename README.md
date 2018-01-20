@@ -102,10 +102,9 @@ link = "<a href='http://www.google.com'>google</a>"
 link2 = "<a href='http://www.github.com'>github</a>"
 
 breadcrumb.add_link(link).add_link(link2).to_s
-
-# this will generate the breadcrumb list
 ```
 ```html
+# this will generate the breadcrumb list 
 <nav class="">
    <div class="nav-wrapper">
       <div class="s12 col">
