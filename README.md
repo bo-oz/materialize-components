@@ -81,8 +81,9 @@ MaterializeComponents::Badge::New.new("Text").to_s
 MaterializeComponents.new_badge('text').to_s
 
 # Both willgenerate the following HTML:
+```
+```html
 <span class="badge new">Text</span>
-
 ```
 
 ### Breadcrumbs
@@ -103,7 +104,8 @@ link2 = "<a href='http://www.github.com'>github</a>"
 breadcrumb.add_link(link).add_link(link2).to_s
 
 # this will generate the breadcrumb list
-
+```
+```html
 <nav class="">
    <div class="nav-wrapper">
       <div class="s12 col">
