@@ -1,6 +1,8 @@
+require_relative 'base'
+
 module MaterializeComponents
 
-  class Spinner < MaterializeComponents::Base
+  class Spinner < Base
 
     # Creates a new instance of a Spinner
     #

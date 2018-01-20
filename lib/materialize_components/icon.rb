@@ -1,6 +1,8 @@
+require_relative 'base'
+
 module MaterializeComponents
 
-  class Icon < MaterializeComponents::Base
+  class Icon < Base
 
     # Creates a new instance of an Icon
     #

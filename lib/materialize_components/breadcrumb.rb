@@ -1,6 +1,8 @@
+require_relative 'base'
+
 module MaterializeComponents
 
-  class Breadcrumb < MaterializeComponents::Base
+  class Breadcrumb < Base
 
     # Creates a new breadcrumb object
 

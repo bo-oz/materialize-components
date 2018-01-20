@@ -1,6 +1,8 @@
+require_relative 'base'
+
 module MaterializeComponents
 
-  class ButtonSkeleton < MaterializeComponents::Base
+  class ButtonSkeleton < Base
 
     # Creates a new instance of a button skeleton, normally will not be used
     #

@@ -2,7 +2,7 @@ require_relative 'base'
 
 module MaterializeComponents
 
-  class Badge < MaterializeComponents::Base
+  class Badge < Base
 
     # Creates a new instance of a badge
     #

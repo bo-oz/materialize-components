@@ -1,6 +1,8 @@
+require_relative 'base'
+
 module MaterializeComponents
 
-  class Chip < MaterializeComponents::Base
+  class Chip < Base
 
     # Creates a new instance of a chip
     #

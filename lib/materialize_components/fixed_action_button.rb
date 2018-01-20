@@ -1,6 +1,8 @@
+require_relative 'base'
+
 module MaterializeComponents
 
-  class FixedActionButton < MaterializeComponents::Base
+  class FixedActionButton < Base
 
     attr_accessor :buttons
 
