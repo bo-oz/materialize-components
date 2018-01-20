@@ -39,17 +39,17 @@ This allows you quick access to the various helper methods. Take a look at `lib/
 
 The gem gives access to the following components from MaterializeCSS:
 
-* Badges
+* [Badges](#badges)
 * [Breadcrumbs](#breadcrumbs)
-* Buttons
-* Chips
-* Fixed Action Buttons
-* Icon Badges
-* Icons
-* Preloaders
-* Spinners
+* [Buttons](#buttons)
+* [Chips](#chips)
+* [Fixed Action Buttons](#fab)
+* [Icon Badges](#iconbadges)
+* [Icons](#icons)
+* [Preloaders](#preloaders)
+* [Spinners](#spinners)
 
-### Badges
+### <a name="badges"></a> Badges
 
 Please refer to the documentation on [Badges](http://materializecss.com/badges.html) from MaterializeCSS Documentation, to get a basic idea of what these are.
 
@@ -115,7 +115,19 @@ breadcrumb.add_link(link).add_link(link2).to_s
 
 ```
 
-### Buttons
+### <a name="buttons"></a> Buttons
+
+### <a name="chips"></a> Chips
+
+### <a name="fab"></a> Fixed Action Buttons
+
+### <a name="iconbadges"></a> Icon Badges
+
+### <a name="icons"></a> Icons
+
+### <a name="preloaders"></a> Preloaders
+
+### <a name="spinners"></a> Spinners
 
 
 ## Todo
