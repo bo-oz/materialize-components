@@ -40,7 +40,7 @@ This allows you quick access to the various helper methods. Take a look at `lib/
 The gem gives access to the following components from MaterializeCSS:
 
 * Badges
-* Breadcrumbs
+* [Breadcrumbs](#breadcrumbs)
 * Buttons
 * Chips
 * Fixed Action Buttons
@@ -85,7 +85,7 @@ MaterializeComponents.new_badge('text').to_s
 <span class="badge new">Text</span>
 ```
 
-### Breadcrumbs
+### <a name="breadcrumbs"></a> Breadcrumbs
 
 To create a breadcrumb, you first instantiate the class and can then add links to the object:
 
