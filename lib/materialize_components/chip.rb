@@ -1,6 +1,6 @@
 module MaterializeComponents
 
-  class Chip < Base
+  class Chip < MaterializeComponents::Base
 
     # Creates a new instance of a chip
     #

@@ -1,6 +1,6 @@
 module MaterializeComponents
 
-  class Icon < Base
+  class Icon < MaterializeComponents::Base
 
     # Creates a new instance of an Icon
     #

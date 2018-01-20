@@ -1,6 +1,6 @@
 module MaterializeComponents
 
-  class ButtonSkeleton < Base
+  class ButtonSkeleton < MaterializeComponents::Base
 
     # Creates a new instance of a button skeleton, normally will not be used
     #

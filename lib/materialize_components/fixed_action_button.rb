@@ -1,6 +1,6 @@
 module MaterializeComponents
 
-  class FixedActionButton < Base
+  class FixedActionButton < MaterializeComponents::Base
 
     attr_accessor :buttons
 

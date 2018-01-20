@@ -1,6 +1,6 @@
 module MaterializeComponents
 
-  class IconBadge < Base
+  class IconBadge < MaterializeComponents::Base
 
     # Creates a new instance of an Icon Badge
     #

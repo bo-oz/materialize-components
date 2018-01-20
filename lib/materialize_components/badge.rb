@@ -1,6 +1,6 @@
 module MaterializeComponents
 
-  class Badge < Base
+  class Badge < MaterializeComponents::Base
 
     # Creates a new instance of a badge
     #

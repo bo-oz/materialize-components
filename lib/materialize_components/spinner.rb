@@ -1,6 +1,6 @@
 module MaterializeComponents
 
-  class Spinner < Base
+  class Spinner < MaterializeComponents::Base
 
     # Creates a new instance of a Spinner
     #

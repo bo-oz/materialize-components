@@ -1,6 +1,6 @@
 module MaterializeComponents
 
-  class Preloader < Base
+  class Preloader < MaterializeComponents::Base
 
     # Creates a new instance of an Preloader
     #
@@ -42,7 +42,7 @@ module MaterializeComponents
       end
     end
 
-    class Indeterminate < Base
+    class Indeterminate < MaterializeComponents::Base
 
       # Creates a new instance of an Indeterminate
 

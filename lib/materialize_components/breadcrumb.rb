@@ -1,6 +1,6 @@
 module MaterializeComponents
 
-  class Breadcrumb < Base
+  class Breadcrumb < MaterializeComponents::Base
 
     # Creates a new breadcrumb object
 
