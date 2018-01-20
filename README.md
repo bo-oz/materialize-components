@@ -61,13 +61,13 @@ MaterializeComponents::Badge.new("Text").to_s
 MaterializeComponents.badge('text').to_s
 
 # Both willgenerate the following HTML:
-<span class=\"badge\">Text</span>
+<span class="badge">Text</span>
 
 # Setting a caption
 MaterializeComponents.badge('text').caption('caption').to_s
 
 # Will generate
-<span data-badge-caption=\"caption\" class=\"badge\">Text</span>
+<span data-badge-caption="caption" class="badge">Text</span>
 
 ```
 
@@ -81,10 +81,41 @@ MaterializeComponents::Badge::New.new("Text").to_s
 MaterializeComponents.new_badge('text').to_s
 
 # Both willgenerate the following HTML:
-<span class=\"badge new\">Text</span>
+<span class="badge new">Text</span>
 
 ```
 
+### Breadcrumbs
+
+To create a breadcrumb, you first instantiate the class and can then add links to the object:
+
+```
+# Accessing the class directly
+breadcrumb = MaterializeComponents::Breadcrumb.new
+
+# You can also use the convenience method
+breadcrumb = MaterializeComponents.breadcrumb
+
+# now you can add links to the object
+link = "<a href='http://www.google.com'>google</a>"
+link2 = "<a href='http://www.github.com'>github</a>"
+
+breadcrumb.add_link(link).add_link(link2).to_s
+
+# this will generate the breadcrumb list
+
+<nav class="">
+   <div class="nav-wrapper">
+      <div class="s12 col">
+        <a href='http://www.google.com'>google</a>
+        <a href='http://www.github.com'>github</a>
+      </div>
+   </div>
+</nav>
+
+```
+
+### Buttons
 
 
 ## Todo
