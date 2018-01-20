@@ -1,16 +1,16 @@
 $:.unshift(File.dirname(__FILE__))
-require 'materialize_components/badge.rb'
-require 'materialize_components/base.rb'
-require 'materialize_components/breadcrumb.rb'
-require 'materialize_components/button.rb'
-require 'materialize_components/chip.rb'
-require 'materialize_components/errors.rb'
-require 'materialize_components/fixed_action_button.rb'
-require 'materialize_components/icon_badge.rb'
-require 'materialize_components/icon.rb'
-require 'materialize_components/preloader.rb'
-require 'materialize_components/spinner.rb'
-require 'materialize_components/version.rb'
+require_relative 'materialize_components/badge.rb'
+require_relative 'materialize_components/base.rb'
+require_relative 'materialize_components/breadcrumb.rb'
+require_relative 'materialize_components/button.rb'
+require_relative 'materialize_components/chip.rb'
+require_relative 'materialize_components/errors.rb'
+require_relative 'materialize_components/fixed_action_button.rb'
+require_relative 'materialize_components/icon_badge.rb'
+require_relative 'materialize_components/icon.rb'
+require_relative 'materialize_components/preloader.rb'
+require_relative 'materialize_components/spinner.rb'
+require_relative 'materialize_components/version.rb'
 
 module MaterializeComponents
 
