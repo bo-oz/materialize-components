@@ -53,7 +53,7 @@ The gem gives access to the following components from MaterializeCSS:
 
 Please refer to the documentation on [Badges](http://materializecss.com/badges.html) from MaterializeCSS Documentation, to get a basic idea of what these are.
 
-```
+```ruby
 # Accessing the class directly
 MaterializeComponents::Badge.new("Text").to_s
 
@@ -73,7 +73,7 @@ MaterializeComponents.badge('text').caption('caption').to_s
 
 MaterializeCSS also has a "New Badge", you can create these by instantiating a different class:
 
-```
+```ruby
 # Accessing the class directly
 MaterializeComponents::Badge::New.new("Text").to_s
 
@@ -89,7 +89,7 @@ MaterializeComponents.new_badge('text').to_s
 
 To create a breadcrumb, you first instantiate the class and can then add links to the object:
 
-```
+```ruby
 # Accessing the class directly
 breadcrumb = MaterializeComponents::Breadcrumb.new
 
