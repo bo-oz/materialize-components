@@ -1,0 +1,28 @@
+module MaterializeComponents
+
+  class Icon < Base
+
+    # Creates a new instance of an Icon
+    #
+    # @param [String] icon The icon for the Icon Badge
+
+    def initialize icon
+      @content = icon
+      @tag = :i
+      @class = ["material-icons"]
+    end
+
+    # Sets the size of the icon
+    #
+    # @return [self] Returns a reference to self
+
+    ["tiny", "small", "medium", "large"].each do |method|
+      define_method(method) do
+        @class << method
+        return self
+      end
+    end
+
+  end
+
+end
