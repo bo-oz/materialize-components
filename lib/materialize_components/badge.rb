@@ -1,3 +1,5 @@
+require_relative 'base'
+
 module MaterializeComponents
 
   class Badge < MaterializeComponents::Base
