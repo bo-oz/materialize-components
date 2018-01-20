@@ -87,7 +87,7 @@ MaterializeComponents.new_badge('text').to_s
 
 ### <a name="breadcrumbs"></a> Breadcrumbs
 
-To create a breadcrumb, you first instantiate the class and can then add links to the object:
+To create a [breadcrumb](http://materializecss.com/breadcrumbs.html), you first instantiate the class and can then add links to the object.
 
 ```ruby
 # Accessing the class directly
@@ -116,6 +116,103 @@ breadcrumb.add_link(link).add_link(link2).to_s
 ```
 
 ### <a name="buttons"></a> Buttons
+
+Please have a look at the documentation to find out all about the various types of [buttons](http://materializecss.com/buttons.html). All types are currently supported.
+
+```ruby
+# Accessing the class directly
+MaterializeComponents::Button.new('text').to_s
+
+# You can also use the convenience method
+MaterializeComponents.button('text').to_s
+```
+```html
+<!-- This will generate the following HTML -->
+<a class="btn">text</a>"
+```
+
+There are a lot more options:
+
+```ruby
+button = MaterializeComponents::Button.new('text')
+
+# to set the link
+button.href('http://www.google.com').to_s
+
+# to make it use waves
+button.waves.to_s
+
+# to make it disabled
+button.disabled.to_s
+
+# to make it large
+button.large.to_s
+
+# to make it flat
+button.flat.to_s
+
+# all the methods are returning a reference to self, so you are able
+# to chain commands as well, so to create a large wave button:
+button.large.waves.to_s
+```
+
+#### Icon Button
+
+If you want an icon in the button, use a separate class:
+
+```ruby
+# Accessing the class directly
+icon_button = MaterializeComponents::Button::WithIcon.new('add_box')
+
+# You can also use the convenience method
+MaterializeComponents.button_with_icon('add_box').to_s
+
+# Don't forget to set the content!
+icon_button.content('text').to_s
+```
+```html
+<!-- This will generate the following HTML -->
+<a class="btn"><i class="material-icons">add_box</i> text</a>
+```
+
+
+One important difference is that in this case, the class should be instantiated
+with the name of the icon. This name refers to the [Icon List](http://materializecss.com/icons.html) you can find
+in the official MaterializeCSS documentation.
+
+There are also some other others for this class
+
+```ruby
+# to set the icon right of the text
+icon_button = icon_button.icon_right.content('text')
+
+# to set an class for the icon
+icon_button.icon_class('red').to_s
+```
+```html
+<!-- This will generate the following HTML -->
+<a class="btn">text <i class="material-icons red">add_box</i></a>
+```
+
+#### Floating Button
+
+There's alson something called a Floating button, this is circle shaped button
+with an icon.
+
+
+```ruby
+# Accessing the class directly
+icon_button = MaterializeComponents::Button::Floating.new('add_box')
+
+# You can also use the convenience method
+MaterializeComponents.floating_button('add_box').to_s
+
+```
+```html
+<!-- This will generate the following HTML -->
+<a class="btn-floating btn-large"><i class="material-icons">add_box</i></a>
+```
+
 
 ### <a name="chips"></a> Chips
 
