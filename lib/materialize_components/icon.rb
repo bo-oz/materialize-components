@@ -7,6 +7,8 @@ module MaterializeComponents
     # Creates a new instance of an Icon
     #
     # @param [String] icon The icon for the Icon Badge
+    attr_writer :content
+
 
     def initialize icon
       @content = icon

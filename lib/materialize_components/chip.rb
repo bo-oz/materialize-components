@@ -28,6 +28,7 @@ module MaterializeComponents
       # Creates a new instance of a chip with an icon
       #
       # @param [String] icon The icon to use inside the chip
+      attr_reader :icon_badge
 
       def initialize icon
         @icon_badge = IconBadge.new(icon)
