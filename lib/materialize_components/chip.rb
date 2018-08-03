@@ -93,7 +93,11 @@ module MaterializeComponents
       private
 
         def output
-          (@orientation == :ltr) ? "#{@icon_badge.to_s} #{@content}" : "#{@content} #{@icon_badge.to_s}"
+          output = (@orientation == :ltr) ? "#{@icon_badge.to_s} #{@content}" : "#{@content} #{@icon_badge.to_s}"
+          reset_class
+          badge_class
+          icon_class
+          output
         end
     end
 
