@@ -38,6 +38,7 @@ module MaterializeComponents
         @icon_badge = IconBadge.new(icon)
         @orientation = :ltr
         reset_class
+        super
       end
 
       def reset_class
