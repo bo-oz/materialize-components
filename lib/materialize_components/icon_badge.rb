@@ -11,7 +11,6 @@ module MaterializeComponents
 
     def initialize icon
       @icon = Icon.new(icon)
-      @icon.add_class('white-text')
       @tag = :div
       reset_class
     end
