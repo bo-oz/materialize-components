@@ -3,6 +3,8 @@ module MaterializeComponents
   class Base
     include ActionView::Helpers::TagHelper
 
+    attr_accessor :class
+
     # Sets the style of an element
     #
     # @param [String] css_style The Style rule to add
@@ -42,6 +44,10 @@ module MaterializeComponents
     def add_class(c = "")
       @class << c
       return self
+    end
+
+    def remove_class c
+      @class.delete(c)
     end
 
 

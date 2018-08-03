@@ -9,8 +9,13 @@ module MaterializeComponents
     # @param [String] content The text inside the chip
 
     def initialize content
+      super
       @content = content
       @tag = :div
+      reset_class
+    end
+
+    def reset_class
       @class = ['chip']
     end
 
@@ -61,7 +66,12 @@ module MaterializeComponents
       # @return [self] Returns a reference to self
 
       def icon_class(c= "")
-        @icon_badge.add_class(c)
+        @icon_badge.icon.add_class(c)
+        self
+      end
+
+      def icon icon
+        @icon_badge.icon.content = icon
         self
       end
 

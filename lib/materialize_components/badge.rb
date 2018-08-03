@@ -11,6 +11,10 @@ module MaterializeComponents
     def initialize content
       @content = content
       @tag = :span
+      reset_class
+    end
+
+    def reset_class
       @class = ['badge']
     end
 

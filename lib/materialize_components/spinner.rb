@@ -10,8 +10,12 @@ module MaterializeComponents
 
     def initialize color ='blue'
       @tag = :div
-      @class = ["preloader-wrapper active"]
+      reset_class
       @color = color.in?(['red','blue','yellow','green']) ? color : 'blue'
+    end
+
+    def reset_class
+      @class = ["preloader-wrapper active"]
     end
 
     # Sets the size of the spinner

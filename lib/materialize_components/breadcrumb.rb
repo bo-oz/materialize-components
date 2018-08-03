@@ -8,8 +8,12 @@ module MaterializeComponents
 
     def initialize
       @tag = :nav
-      @class = Array.new
       @links = Array.new
+      reset_class
+    end
+
+    def reset_class
+      @class = Array.new
     end
 
     # Adds a link to the breadcrumb

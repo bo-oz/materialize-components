@@ -10,8 +10,12 @@ module MaterializeComponents
 
     def initialize
       @tag = :div
-      @class = ['progress']
+      reset_class
       @content = ""
+    end
+
+    def reset_class
+      @class = ['progress']
     end
 
     # Creates a Determinate preloader

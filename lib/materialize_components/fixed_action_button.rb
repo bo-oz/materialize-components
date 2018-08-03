@@ -13,8 +13,12 @@ module MaterializeComponents
     def initialize icon
       @icon = Button::Floating.new(icon)
       @tag = :div
-      @class = ['fixed-action-btn']
+      reset_class
       @buttons = Array.new
+    end
+
+    def reset_class
+      @class = ['fixed-action-btn']
     end
 
     # Adds a button to the menu, this needs to be an object that inherits

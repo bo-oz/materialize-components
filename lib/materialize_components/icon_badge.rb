@@ -13,6 +13,10 @@ module MaterializeComponents
       @icon = Icon.new(icon)
       @icon.add_class('white-text')
       @tag = :div
+      reset_class
+    end
+
+    def reset_class
       @class = ['icon-badge-small']
     end
 

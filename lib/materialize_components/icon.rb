@@ -13,6 +13,10 @@ module MaterializeComponents
     def initialize icon
       @content = icon
       @tag = :i
+      reset_class
+    end
+
+    def reset_class
       @class = ["material-icons"]
     end
 

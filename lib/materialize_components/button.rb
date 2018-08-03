@@ -11,6 +11,11 @@ module MaterializeComponents
     def initialize content
       @content = content
       @tag = :a
+      reset_class
+    end
+
+    def reset_class
+      @class = Array.new
     end
 
     # make the button use the waves
