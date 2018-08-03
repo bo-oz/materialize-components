@@ -1,7 +1,7 @@
 module MaterializeComponents
 
   class Base
-    #include ActionView::Helpers::TagHelper
+    include ActionView::Helpers::TagHelper
 
     attr_accessor :css_class
 
@@ -74,7 +74,7 @@ module MaterializeComponents
 
       def html_attributes
         @attr = (!@attr.is_a?(Hash) ? {} : @attr)
-        @attr.merge(style: @style, class: @css_class.join(' '))
+        @attr.merge(style: @style, class: @css_class.join(' ').strip)
       end
 
       def output
