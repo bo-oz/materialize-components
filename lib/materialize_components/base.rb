@@ -48,6 +48,7 @@ module MaterializeComponents
 
     def remove_class c
       @class.delete(c)
+      return self
     end
 
 

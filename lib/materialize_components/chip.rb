@@ -38,9 +38,12 @@ module MaterializeComponents
       def initialize icon
         @icon_badge = IconBadge.new(icon)
         @orientation = :ltr
-        super
+        reset_class
       end
 
+      def reset_class
+        @class = Array.new
+      end
       # overwrite the cloasable method so that it can't be used
       # for this type of element
       #
