@@ -13,7 +13,7 @@ module MaterializeComponents
     end
 
     def reset_class
-      @class = Array.new
+      @css_class = Array.new
     end
 
     # Adds a link to the breadcrumb

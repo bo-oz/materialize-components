@@ -17,8 +17,8 @@ module MaterializeComponents
     end
 
     def reset_class c=nil
-      @class = ["material-icons","white-text"]
-      @class << c unless c.nil?
+      @css_class = ["material-icons","white-text"]
+      @css_class << c unless c.nil?
       return self
     end
 
@@ -33,7 +33,7 @@ module MaterializeComponents
 
     ["tiny", "small", "medium", "large"].each do |method|
       define_method(method) do
-        @class << method
+        @css_class << method
         return self
       end
     end

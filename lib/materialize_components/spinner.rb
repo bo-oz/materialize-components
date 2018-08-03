@@ -15,7 +15,7 @@ module MaterializeComponents
     end
 
     def reset_class
-      @class = ["preloader-wrapper active"]
+      @css_class = ["preloader-wrapper active"]
     end
 
     # Sets the size of the spinner
@@ -24,7 +24,7 @@ module MaterializeComponents
 
     ["small", "big"].each do |method|
       define_method(method) do
-        @class << method
+        @css_class << method
         return self
       end
     end

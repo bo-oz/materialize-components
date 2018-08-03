@@ -15,7 +15,7 @@ module MaterializeComponents
     end
 
     def reset_class
-      @class = ['progress']
+      @css_class = ['progress']
     end
 
     # Creates a Determinate preloader
@@ -43,7 +43,7 @@ module MaterializeComponents
 
       def initialize width
         @tag = :div
-        @class = ['determinate']
+        @css_class = ['determinate']
         @style = "width: #{width}%"
       end
     end
@@ -54,7 +54,7 @@ module MaterializeComponents
 
       def initialize
         @tag = :div
-        @class = ['indeterminate']
+        @css_class = ['indeterminate']
       end
     end
   end

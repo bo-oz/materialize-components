@@ -15,8 +15,8 @@ module MaterializeComponents
     end
 
     def reset_class c=nil
-      @class = ['badge']
-      @class << c unless c.nil?
+      @css_class = ['badge']
+      @css_class << c unless c.nil?
       return self
     end
 
@@ -44,7 +44,7 @@ module MaterializeComponents
 
       def initialize content
         super
-        @class << 'new'
+        @css_class << 'new'
       end
     end
 

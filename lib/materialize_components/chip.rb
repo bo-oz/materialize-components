@@ -15,7 +15,7 @@ module MaterializeComponents
     end
 
     def reset_class
-      @class = ['chip']
+      @css_class = ['chip']
     end
 
     # makes it a closable chip
@@ -42,8 +42,8 @@ module MaterializeComponents
       end
 
       def reset_class c=nil
-        @class = ['chip']
-        @class << c unless c.nil?
+        @css_class = ['chip']
+        @css_class << c unless c.nil?
         return self
       end
       # overwrite the cloasable method so that it can't be used

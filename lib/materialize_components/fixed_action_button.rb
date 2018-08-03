@@ -18,7 +18,7 @@ module MaterializeComponents
     end
 
     def reset_class
-      @class = ['fixed-action-btn']
+      @css_class = ['fixed-action-btn']
     end
 
     # Adds a button to the menu, this needs to be an object that inherits
@@ -39,7 +39,7 @@ module MaterializeComponents
     # @return [self] Returns a reference to self
 
     def toggle
-      @class << 'click-to-toggle'
+      @css_class << 'click-to-toggle'
       return self
     end
 
@@ -48,7 +48,7 @@ module MaterializeComponents
     # @return [self] Returns a reference to self
 
     def toolbar
-      @class << 'toolbar'
+      @css_class << 'toolbar'
       return self
     end
 

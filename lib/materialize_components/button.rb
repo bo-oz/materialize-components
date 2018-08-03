@@ -15,7 +15,7 @@ module MaterializeComponents
     end
 
     def reset_class
-      @class = Array.new
+      @css_class = Array.new
     end
 
     # make the button use the waves
@@ -23,7 +23,7 @@ module MaterializeComponents
     # @return [self] Returns a reference to self
 
     def waves
-      @class << 'waves-effect waves-light'
+      @css_class << 'waves-effect waves-light'
       return self
     end
 
@@ -32,7 +32,7 @@ module MaterializeComponents
     # @return [self] Returns a reference to self
 
     def disabled
-      @class << 'disabled'
+      @css_class << 'disabled'
       return self
     end
 
@@ -41,7 +41,7 @@ module MaterializeComponents
     # @return [self] Returns a reference to self
 
     def large
-      @class << 'btn-large'
+      @css_class << 'btn-large'
       return self
     end
 
@@ -50,7 +50,7 @@ module MaterializeComponents
     # @return [self] Returns a reference to self
 
     def flat
-      @class << 'btn-flat'
+      @css_class << 'btn-flat'
       return self
     end
 
@@ -73,7 +73,7 @@ module MaterializeComponents
 
     def initialize content
       super
-      @class = ['btn']
+      @css_class = ['btn']
     end
 
     class Floating < ButtonSkeleton
@@ -85,7 +85,7 @@ module MaterializeComponents
       def initialize icon
         super
         @icon = Icon.new(icon)
-        @class = ['btn-floating btn-large']
+        @css_class = ['btn-floating btn-large']
       end
 
       private

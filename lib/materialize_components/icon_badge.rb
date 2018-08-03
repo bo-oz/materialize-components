@@ -16,8 +16,8 @@ module MaterializeComponents
     end
 
     def reset_class c=nil
-      @class = ['icon-badge-small']
-      @class << c unless c.nil?
+      @css_class = ['icon-badge-small']
+      @css_class << c unless c.nil?
       return self
     end
 
@@ -40,7 +40,7 @@ module MaterializeComponents
 
       def initialize icon
         super
-        @class = ['icon-badge']
+        @css_class = ['icon-badge']
       end
     end
 

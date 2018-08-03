@@ -3,7 +3,7 @@ module MaterializeComponents
   class Base
     include ActionView::Helpers::TagHelper
 
-    attr_accessor :class
+    attr_accessor :css_class
 
     # Sets the style of an element
     #
@@ -42,12 +42,12 @@ module MaterializeComponents
     # @return [self] Returns a reference to self
 
     def add_class(c = "")
-      @class << c
+      @css_class << c
       return self
     end
 
     def remove_class c
-      @class.delete(c)
+      @css_class.delete(c)
       return self
     end
 
@@ -74,7 +74,7 @@ module MaterializeComponents
 
       def html_attributes
         @attr = (!@attr.is_a?(Hash) ? {} : @attr)
-        @attr.merge(style: @style, class: @class.join(' '))
+        @attr.merge(style: @style, class: @css_class.join(' '))
       end
 
       def output
