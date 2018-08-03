@@ -17,7 +17,7 @@ module MaterializeComponents
     end
 
     def reset_class c=nil
-      @class = ["material-icons"]
+      @class = ["material-icons","white-text"]
       @class << c unless c.nil?
       return self
     end
