@@ -24,6 +24,7 @@ module MaterializeComponents
 
     def icon icon
       @content = icon
+      return self
     end
 
     # Sets the size of the icon
