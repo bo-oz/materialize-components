@@ -16,8 +16,10 @@ module MaterializeComponents
       reset_class
     end
 
-    def reset_class
+    def reset_class c=nil
       @class = ['icon-badge-small']
+      @class << c unless c.nil?
+      return self
     end
 
     # Sets the class of the icon

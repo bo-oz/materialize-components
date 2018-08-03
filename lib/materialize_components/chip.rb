@@ -41,8 +41,9 @@ module MaterializeComponents
         reset_class
       end
 
-      def reset_class
+      def reset_class c=nil
         @class = ['chip']
+        @class << c unless c.nil?
         return self
       end
       # overwrite the cloasable method so that it can't be used
@@ -60,7 +61,7 @@ module MaterializeComponents
       # @return [self] Returns a reference to self
 
       def badge_class(c= "")
-        @icon_badge.add_class(c)
+        @icon_badge.reset_class(c)
         self
       end
 
@@ -70,7 +71,7 @@ module MaterializeComponents
       # @return [self] Returns a reference to self
 
       def icon_class(c= "")
-        @icon_badge.icon.add_class(c)
+        @icon_badge.icon.reset_class(c)
         self
       end
 

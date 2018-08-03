@@ -14,8 +14,10 @@ module MaterializeComponents
       reset_class
     end
 
-    def reset_class
+    def reset_class c=nil
       @class = ['badge']
+      @class << c unless c.nil?
+      return self
     end
 
     # Sets a caption for the badge
