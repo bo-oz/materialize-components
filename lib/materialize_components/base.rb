@@ -74,7 +74,7 @@ module MaterializeComponents
 
       def html_attributes
         @attr = (!@attr.is_a?(Hash) ? {} : @attr)
-        @attr.merge(style: @style, class: @css_class.join(' ').strip)
+        @attr.merge(style: @style, class: @css_class.delete_if(&:blank?).join(' ').strip)
       end
 
       def output
