@@ -9,7 +9,6 @@ module MaterializeComponents
     # @param [String] content The text inside the chip
 
     def initialize content
-      super
       @content = content
       @tag = :div
       reset_class
