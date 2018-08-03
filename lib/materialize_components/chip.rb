@@ -42,7 +42,7 @@ module MaterializeComponents
       end
 
       def reset_class
-        @class = Array.new
+        @class = ['chip']
         return self
       end
       # overwrite the cloasable method so that it can't be used
