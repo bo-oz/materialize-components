@@ -70,6 +70,12 @@ module MaterializeComponents
       content_tag(@tag, output.html_safe, html_attributes)
     end
 
+    def reset
+      @style = ""
+      @css_class = []
+      self
+    end
+
     private
 
       def html_attributes

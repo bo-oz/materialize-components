@@ -94,8 +94,9 @@ module MaterializeComponents
         reset_class
         badge_class
         icon_class
+        self
       end
-      
+
       private
 
         def output
