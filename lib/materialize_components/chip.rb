@@ -90,14 +90,16 @@ module MaterializeComponents
         return self
       end
 
+      def reset
+        reset_class
+        badge_class
+        icon_class
+      end
+      
       private
 
         def output
           output = (@orientation == :ltr) ? "#{@icon_badge.to_s} #{@content}" : "#{@content} #{@icon_badge.to_s}"
-          reset_class
-          badge_class
-          icon_class
-          output
         end
     end
 
